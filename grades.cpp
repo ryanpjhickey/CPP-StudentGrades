@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 // Function Prototypes
 void ProgramGreeting();
 int Menu();
+double gpaConvert(char array[], int size);
 
 // -----------------------------------------Class Definitions-----------------------------------------
 class Student
@@ -12,7 +14,7 @@ class Student
     private:
       int studentID;
     public:
-    int studentGrades[];
+    int studentGrades[25];
 
     void setstudentID(int ID)
     {
@@ -24,10 +26,14 @@ class Student
       return studentID;
     };
 
-    void setStudentGrades(int *pointer)
+    void setStudentGrades(int *pointer, int size)
     {
-      int size = sizeof(pointer);
-    }
+      for (int i = 0; i < size; i++)
+        {
+          pointer[i] = studentGrades[i];
+          cout << studentGrades[i] << " ";
+        }
+    };
 
     // Specification C3 - Letter Grades
     char Grade2Lttr (int numberGrade)
@@ -150,10 +156,16 @@ int main()
           break;
         }
       case 3:
-        // Call function to process grades Grade2Letter- output failing grades
-        // Call fancyText Class
-      break;
-
+        // Call Grade2Letter, call fancyText, Calculate GPA 
+        {
+          char letterGrades[size];
+          for (int i = 0; i < size; i++)
+              letterGrades[i] = Student1.Grade2Lttr(pGrades[i]);
+          cout << fixed << setprecision(1) << gpaConvert(letterGrades, size);
+          
+          Menu();
+          break;
+          }
       case 4: 
       // Delete a grade by 1
       {
@@ -221,6 +233,26 @@ int Menu()
   } while ((choice < 1) || (choice > 5));
 
   return choice;
+};
+
+double gpaConvert(char array[], int size) {
+  double dSIZE = size;
+  double totalPoint = 0;
+  double gpa;
+  for (int i = 0; i < size; i++) {
+    if (array[i] == 'A')
+      totalPoint += 4.0;
+    if (array[i] == 'B')
+      totalPoint += 3.0;
+    if (array[i] == 'C')
+      totalPoint += 2.0;
+    if (array[i] == 'D')
+      totalPoint += 1.0;
+    if (array[i] == 'F')
+      totalPoint += 0;
+  }
+  gpa = totalPoint/dSIZE;
+  return gpa;
 };
 
 void UnitTest()
