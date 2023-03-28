@@ -41,8 +41,5 @@ A user can enter a list of grades and calculate a final GPA based on the grades 
 If you have any questions, please contact me at:
 | Name | Github | Email |
 | ----------- | ----------- | ----------- |
-
 | Ryan Hickey | [@ryanpjhickey](https://github.com/ryanpjhickey) | ryanpjhickey@gmail.com |
 | Erika Cole | No GitHub | erikacole0@gmail.com |
-
-======
