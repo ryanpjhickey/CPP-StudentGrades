@@ -43,11 +43,6 @@ If you have any questions, please contact me at:
 | ----------- | ----------- | ----------- |
 
 | Ryan Hickey | [@ryanpjhickey](https://github.com/ryanpjhickey) | ryanpjhickey@gmail.com |
-
-| ----------- | ----------- | ----------- |
-
 | Erika Cole | No GitHub | erikacole0@gmail.com |
-
-| ----------- | ----------- | ----------- |
 
 ======
