@@ -31,8 +31,7 @@ A user can enter a list of grades and calculate a final GPA based on the grades 
 
 ## Contributors
 
-[<img src="https://ca.slack-edge.com/T03EP850QMA-U03MKQ6HKB3-2c9d97da4786-512" width="75" height="75">](https://github.com/ryanpjhickey)
-[<img src="https://media.licdn.com/dms/image/C5603AQFNxvleGO7jiA/profile-displayphoto-shrink_800_800/0/1646358955654?e=1685577600&v=beta&t=G2X6w2Hmb0AwDVCki5eU_9vgouLW3HuGWH2eksp_Lh4" width="75" height="75">](https://github.com/ryanpjhickey)
+[<img src="https://avatars.githubusercontent.com/u/108383347?v=4.png" width="75" height="75">](https://github.com/ryanpjhickey)
 
 ---
 
